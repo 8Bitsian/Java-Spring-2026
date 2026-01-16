@@ -6,8 +6,8 @@
 
 📂 Files will be listed below:
 - `J102_1.java` | 5 Minute Interview
-- `J101_1.java` | Part 1 of Lab
-- `J101_1.java` | Part 2 of Lab
-- `J101_1.java` | Part 3 of Lab
+- `J102_2.java` | Part 1 of Lab
+- `J102_3.java` | Part 2 of Lab
+- `J102_4.java` | Part 3 of Lab
 
 📹 Watch the [5‑minute interview](https://www.youtube.com/@8BitSoftware)<br/>
