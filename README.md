@@ -1,8 +1,8 @@
 ## ☕ Java-Spring-2026
 
 ℹ️ Coursework and assignments for my Java 1 class, including weekly exercises and project submissions.<br/>
-🖥️ The course requires that I utilize JetBrains IntelliJ as my IDE.<br/>
-📔 I am referencing Introduction to Java Programming and Data Structures, Comprehensive Version 12E by Y. Daniel Liang. Here is a link to the [companion website](https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/).<br/>
+🖥️ The course requires that I utilize JetBrains [IntelliJ Idea](https://www.jetbrains.com/idea/) as my IDE.<br/>
+📔 I am referencing Introduction to Java Programming and Data Structures, Comprehensive Version 12E by Y. Daniel Liang and the [companion website](https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/).<br/>
 
 📂 Lessons will be listed below:
 - [Lesson 1](./lesson01/) - Introduction to Computers, Programs, and Java
