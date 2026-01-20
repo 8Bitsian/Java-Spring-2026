@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class J103_12 { // switch statement
+public class J103_1_2 { // switch statement
    public static void main(String[] args) {
       // Create a Scanner object
       Scanner input = new Scanner(System.in);
@@ -34,3 +34,4 @@ public class J103_12 { // switch statement
       input.close();
    }
 }
+
