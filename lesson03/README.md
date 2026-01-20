@@ -5,7 +5,8 @@
 📔 I am referencing [Chapter 3](https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_12/cw/#videonotes) of Introduction to Java Programming and Data Structures, Comprehensive Version 12E by Y. Daniel Liang.<br/>
 
 📂 Files will be listed below:
-- `J103_1.java` | 5 Minute Interview
+- `J103_1-1.java` | Part 1 of 5 Minute Interview
+- `J103_1-2.java` | Part 2 of 5 Minute Interview
 - `J103_2.java` | Part 1 of Lab
 - `J103_3.java` | Part 2 of Lab
 
