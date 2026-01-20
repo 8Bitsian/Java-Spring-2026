@@ -1,4 +1,4 @@
-## ☕ Lesson 03 - Selection
+## ☕ Lesson 04 - Mathematical Functions (Methods)
 
 ℹ️ This lesson covers the basics on Java computations.<br/>
 🖥️ The course requires that I utilize JetBrains [IntelliJ Idea](https://www.jetbrains.com/idea/) as my IDE.<br/>
