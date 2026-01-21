@@ -8,5 +8,6 @@
 - `J104_1.java` | 5 Minute Interview
 - `J104_2.java` | Part 1 of Lab
 - `J104_3.java` | Part 2 of Lab
+- `J104_4.java` | Part 3 of Lab
 
 📹 Watch the [5‑minute interview](https://www.youtube.com/@8BitSoftware)<br/>
