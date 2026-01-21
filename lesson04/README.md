@@ -11,3 +11,4 @@
 - `J104_4.java` | Part 3 of Lab
 
 📹 Watch the [5‑minute interview](https://www.youtube.com/@8BitSoftware)<br/>
+🎥 Watch the [Livestream VOD](https://www.youtube.com/watch?v=5FRvKGt6tio)
