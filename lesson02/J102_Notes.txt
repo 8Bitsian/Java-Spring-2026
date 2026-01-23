@@ -1,0 +1,5 @@
+Imani Hollie 01/22/2026
+
+An algorithm is pseudocode that outlines the application workflow
+
+Comments are ignored by the compiler and give context for lines
