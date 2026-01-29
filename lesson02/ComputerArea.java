@@ -14,7 +14,7 @@ public class ComputeArea {                      // Class 'ComputerArea'
         double radius = input.nextDouble();     // Declare variable 'radius'
 
         // Calculate the area of a circle
-        double area = Math.pow(radius, 2) * Math.PI; // Declare variable 'area' w/Math.pow() and Math.PI
+        double area = Math.pow(radius, 2) * Math.PI; // Declare variable 'area' w/Math.pow(a,b) and Math.PI
 
         // Output area of circle
         System.out.println("The area for " + radius + " is: " + area);
