@@ -11,6 +11,7 @@
 - [Lesson 4](./lesson04/) - Mathematical Functions (Methods)
 - [Lesson 5](./lesson05/) - Loops
 - [Lesson 6](./lesson06/) - Methods
+- [Midterm](./midterm/) - Covers first 6 lessons
 - [Lesson 7](./lesson07/) - Single Arrays
 - [Lesson 8](./lesson08/) - Multidimensional Arrays
 - [Lesson 9](./lesson09/) - Objects and Classes
