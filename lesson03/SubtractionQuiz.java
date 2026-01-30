@@ -1,7 +1,7 @@
 // Import libraries
 import java.util.Scanner;                       // Allows use of Scanner objects
 
-public class ComputeArea {                      // Class 'ComputerArea'
+public class SubtractionQuiz {                  // Class 'SubtractionQuiz'
     public static void main(String[] args) {    // Method 'main' (Entry Point)
         // Generate two random numbers
         int num1 = (int)(Math.random() * 10);   // Math.random() returns double so cast int
