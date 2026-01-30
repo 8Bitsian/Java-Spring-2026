@@ -1,7 +1,7 @@
 // Import libraries
 import java.util.Scanner;                       // Allows use of Scanner objects
 
-public class ComputeArea {                      // Class 'ComputerArea'
+public class ComputeAreaWithIf {                      // Class 'ComputerArea'
     public static void main(String[] args) {    // Method 'main' (Entry Point)
         // Create objects
         Scanner input = new Scanner(System.in); // Create Scanner object 'input'
