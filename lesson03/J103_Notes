@@ -1,0 +1,113 @@
+Imani Hollie 01/29/2026
+Class Chapter 3 Notes
+
+Selection statements use conditions that are Boolean expressions
+A Boolean expression is an expression that evaluates to a boolean value: True or false
+
+- Boolean - wrapper type
+- boolean - primitive type
+
+Ex. radius = 5; radius < 0;  // Result = False
+Ex. radius = 5; radius >= 0; // Result = True
+
+Ex. double radius = 2.0;
+    System.out.println(System.out.println(radius > 0));
+    boolean lightsOn = true; // Can either assign as true/false or an expression
+
+An if statement is a construct that enables a program to specify alternative paths of execution
+An if statement flowchart consists of a decision-diamond into two branches for true/false into statements
+
+Ex. if (Boolean-expression) { // One way decision structure
+        statement for true case
+    }
+
+An if-else statement decides the execution path based on whether the condition is true or false
+
+Ex. if (Boolean-expression) { // Two way decision structure
+        statement for true case
+    } else {
+        statement for false case
+    }
+
+An if statement can be inside another if statement to form a nested if statement
+
+Ex. if (Boolean-expression) { // First IF
+        if (Boolean-expression) { // Second IF
+            statement for true case
+        }
+    } else {
+        statement for false case
+    }
+
+Common Pitfall 1: Using parentheses
+Common Pitfall 2: Mistaking == (equals) for = (assignment)
+Common Pitfall 2: Forgetting braces ({})
+Common Pitfall 2: Dangling else
+Common Pitfall 2: Duplicate Code in Different Case
+
+You can use Math.random() to obtain a random double value between 0.0 and 1.0, excluding 1.0
+
+The logical operators !, &&, ||, and ^ (EXCLUSIVE OR) can be used to create compound Boolean expressions
+-  ! (NOT) Logical Negation
+- && (AND) Logical Conjunction
+- ||  (OR) Logical Disjunction
+-  ^ (XOR) Logical Exclusion
+
+Truth Table for Operator && (AND)
+false && false = false
+false && true  = false
+true  && true  = true
+
+Truth Table for Operator || (OR)
+false || false = false
+false || true  = true
+true  || true  = true
+
+Truth Table for Operator ^ (XOR)
+false ^ false = false
+false ^ true  = true
+true  ^ true  = false
+
+Truth Table for Operator ! (NOT)
+false ! false = true
+false ! true  = false
+true  ! true  = true
+
+A switch statement executes statements based on the value of a variable or an expression
+
+The switch statement observes the following rules:
+- The switch-expression must yield a value of char, byte, short, int, or String type
+  and must always be enclosed in parentheses
+- The value1, ..., and valueN must have the same data type as the value of the
+  switch expression
+- When the value in a case statement matches the value of the switch expression
+- The default case, which is optional, can be used to perform actions when none of the
+  specified cases matches the switch-expression
+- The keyword break is optional and immediately ends the switch statement
+
+A conditional operator evaluates an expression based on a condition
+
+Ex. if (x > 0) {    // boolean-expression ? expression1 : expression2;
+        y = 1;      // Tertiary Operator
+    } else {
+        y = -1;     // y = (x > 0) ? 1 : -1;
+    }               // y = (x > 0) ? 1 OR -1;
+
+Ex. System.out.println((num % 2 == 0) ? "num is even" : "num is odd");
+
+Operator precedence and associativity determine the rder in which operators are evaluated...
+var++ and var-- (Postfix)
++, -, (Unary plus/minus) ++var and --var (Prefix)
+(type) Casting
+!(Not)
+*, /, %
++, - (Binary addition/subtraction)
+Relational
+
+Left associativity (left to right) ->
+Ex. a - b + c - d
+    ((a - b) + c) - d // 0
+
+Right associativity (right to left) <-
+Ex. a = b += c = 5
+    a = (b += (c = 5)) // 6
