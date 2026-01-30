@@ -7,7 +7,7 @@
 📂 Files will be listed below:
 - `J106_1.java` | 5 Minute Interview
 - `J106_2.java` | Part 1 of Lab
-- [Midterm](https://github.com/8Bitsian/Java-Spring-2026/tree/main/midterm) | Part 2 of Lab
+- [Midterm](./midterm/) | Part 2 of Lab
 - `J106_4.java` | Part 2 of Lab
 - `J106_5.java` | Part 3 of Lab
 
