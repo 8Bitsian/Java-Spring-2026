@@ -1,0 +1,15 @@
+*4.8 Find the character of an ASCII code
+Write a code that receives an ASCII code (an integer between 0 and 127) and displays its character.
+
+Sample Run for Exercise04_08.java:
+Enter input data for the program
+69
+
+Sample Output Using the Preceeding Input:
+Enter an ASCII code: 69
+The character for ASCII code 69 is E
+
+Submit:
+DisplayASCIIChar.java
+DisplayASCIIChar.mp4 (or YouTube link)
+JavaNotes.docx
