@@ -67,3 +67,34 @@ Simple Methods for String Objects
 - toUpperCase() / toLowerCase() : Returns new string w/all letters uppercase/lowercase
 - trim() : Returns new string w/out leading and trailing whitespace
 
+A string is a sequence of characters
+Methods in the Character Class
+- isDigit(ch): Returns true if specified characted is a digit
+- isLetter(ch): Returns true if specified characted is a letter
+- isLetterOrDigit(ch): Returns true if specified characted is a letter or digit
+- isLowerCase(ch): Returns true if specified characted is lowercase
+- isUpperCase(ch): Returns true if specified characted is upperCase
+- toLowerCase(ch): Returns lowercase of specified characted
+- toUpperCase(ch): Returns uppercase of specified characted
+
+Obtaining Substrings
+The String Class Contains the Methods for Obtaining Substrings
+- substring(beginIndex): Returns the string's subtring that begins with starting index and the rest of the string
+- substring(beginIndex, endIndex): Returns the substring within the range of the starting and ending index
+
+Conversion between Strings and Numbers
+Integer.parseInt(StringValue)
+- int intValue = Integer.parseInt("123"); // 123
+Double.parseDouble(StringValue)
+- double doubleValue = Double.parseDouble("123.45"); // 123.45
+
+
+
+
+
+
+
+
+
+
+
