@@ -88,13 +88,24 @@ Integer.parseInt(StringValue)
 Double.parseDouble(StringValue)
 - double doubleValue = Double.parseDouble("123.45"); // 123.45
 
+Strings are fundamental in programming. The ability to write programs using strings is essential in learning Java programming.
 
+Mathematics Behind the Game
+A number between 1 and 31 can be represented using a five-digit binary number
+A five-digit binary number can be obtained by assing binaru numbers 1, 10, 100, 1000, or 10000
 
+Formatting Console Ouput
+Use the printf statment: System.out.printf(format, items);
+Where format is a string that may consist of substrings and format specifiers.
+A format specifier specifies how an item
 
+Boolean Value: %b (true or false)
+Character Value: %c ('a' or 'A')
+Decimal Integer: %d (200)
+Floating-Point Number: %f
+Scientific Notation: %e
+String: %s
 
-
-
-
-
+Textblocks because a standard feature since Java 15. It enables you to form a multi-line string
 
 
