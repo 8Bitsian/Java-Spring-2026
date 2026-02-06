@@ -1,0 +1,69 @@
+Imani Hollie 02/02/2026
+Class Chapter 4 Notes
+
+This chapter introduces mathematical functions, characters, String objects. and uses them to develop programs
+
+Common Mathematical Functions
+Class Constants:
+- PI: π - 3.14
+- e: e = 2.71
+Class Methods:
+- Trigonometric: sin(rads), cos(rads), tan(rads), toRadians, toDegrees, asin(a), acos(a), atan(a)
+- Exponent: exp(x), log(x), log10(x), pow(a, b), sqrt(x)
+- Rounding: ceil(x) (up nearest int -> double), floor(x) (down nearest int -> double), rint(x), round(x)
+- min(a,b), max(a,b), abs(a)
+- random()
+
+char is used to represent a single character which are stored as a sequence of binary values (0s and 1s)
+Encoding is mapping the character to its binary representation
+
+ASCII works for basic English and Unicode makes Java global-ready
+
+ASCII (char letter = 'A'; char numChar = '4';)
+- 128 characters
+- English letters and digits
+- Basic symbols
+- No emojis
+- No non-english langauges
+
+Unicode (char letter = '\u0041'; char numChar = '\u0034'; string S = "Hello 🌎";)
+- All langauges and symbols
+- Uses code points
+- Supports emojis
+- Global-ready
+
+The ASCII Character Set and Hexademical Index
+- Fourth row, First coloumn = A, hence 0041
+- Third row, Fourth coloumn = 4, hence 0034
+
+Escape Sequences
+- Backspace: \b or \u0008
+- Tab: \t or \u0009
+- Linefeed: \n or \u000A
+- Formfeed: \f or \u000C
+- Carriage Return: \r or \u000D
+- Backslash: \\ or \u005C
+- Double Quote: \" or \u0022
+
+A char can cast into any numeric type and vice versa.
+When an integer is cast into a, only its lower 16 bits of data are used; The other part is ignored
+
+// Note a hex integer is written using prefix 0X
+char ch1 = (char)0XAB0041; // The lower 16 bits hex code 0041 is assigned to ch
+char ch2 = (char)65.25; // Decimal 65 assigned to ch
+System.out.println(ch1); // ch is character A
+System.out.println(ch2);
+
+Two characters can be compared using the relation operators like comparing two numbers
+- 'a' < 'b' is true because a = 97 and b = 98
+- 'a' < 'A' is false because a = 97 and A = 65
+- '1' < '8' is true because '1' = 49 and '8' = 59
+
+Wrapper class Character has convenience methods for tesing and comparison
+Simple Methods for String Objects
+- length() : Returns number of characters in string
+- charAt(index) : Returns character at specific index
+- concat(s1) : concatenates two string together
+- toUpperCase() / toLowerCase() : Returns new string w/all letters uppercase/lowercase
+- trim() : Returns new string w/out leading and trailing whitespace
+
