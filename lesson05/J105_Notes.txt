@@ -1,6 +1,61 @@
 Imani Hollie 02/12/2026
 Class Chapter 5 Notes
 
-This chapter introduces loops 
+This chapter introduces loops (repeating structures)
 
-Common Loops
+while loop
+control a loop w/sentinel value
+
+Repetitive tasks can be automated via repeating stuructures (loops).
+Loops are construcuts that control repeated executions of a block of statements.
+The concepts of looping is funadmental to programming
+Java provides three types of loops:
+- while loops, do-while loops, and for loops
+
+Looping Design Strategies:
+- Identify statements that need to be repeated
+- Wrap those statements in the loop
+- Add the logic that controls the loop:
+  - Evaluated conditions
+  - User Input controlled loops 
+  - Sentinel Value controlled loops (menus)
+
+Introducing While Loops
+Syntax: while (loop-continuation-condition) { loop body; ...; }
+Each execution of the loop body is called an iteration.
+
+diamond decision-structure (boolean)
+if false { ignore statements } else {process statements}
+
+int count = 0;
+while (count < 100) {
+  System.out.println("Welcome to Java");
+  count++; // postfix increment n += 1
+}
+
+Introducing Do-While Loops
+Syntax: do { loop-body; ...; } while (loop-continuation-condition);
+
+Introducing For Loops
+Syntax for (initial-action; loop-continuation-condition; action-after-each-iteration) { // Loop body; ...; }
+
+int i;
+for (i = 0; i < 100; i++) {
+  System.out.println("Welecome to Java!");
+}
+
+OR
+
+(more preferable)
+for (int i = 0; i < 100; i++) {
+  System.out.println("Welecome to Java!");
+}
+
+Which Loop to Use?
+The 3 forms of loop statements, while, do-wdile, and for are expressibely equivalent; that is you can write any loop in each form. Use the one that is most intuitive and comformatable for you.
+- A while loop may be used if the number of repetitions is not known
+- A do-whiele loop can be used to repalce a while loop if the loop body have to be executed priot to testing
+
+Nested Loops
+Nested loops consist of an outer loop and one or more inner loops.
+Each time the outer loop is repeated, the inner loops are reented, and started anew.
