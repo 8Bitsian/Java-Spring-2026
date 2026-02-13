@@ -34,10 +34,18 @@ while (count < 100) {
 }
 
 Introducing Do-While Loops
-Syntax: do { loop-body; ...; } while (loop-continuation-condition);
+Syntax:
+do {
+  loop-body;
+  ...;
+} while (loop-continuation-condition);
 
 Introducing For Loops
-Syntax for (initial-action; loop-continuation-condition; action-after-each-iteration) { // Loop body; ...; }
+Syntax:
+for (initial-action; loop-continuation-condition; action-after-each-iteration) {
+  // Loop body;
+  ...;
+}
 
 int i;
 for (i = 0; i < 100; i++) {
@@ -59,3 +67,8 @@ The 3 forms of loop statements, while, do-wdile, and for are expressibely equiva
 Nested Loops
 Nested loops consist of an outer loop and one or more inner loops.
 Each time the outer loop is repeated, the inner loops are reented, and started anew.
+
+Additional Controls w/in Loops
+Keywords break and continue are additonal controls within loops
+- Use break in a loop to immeadielty termnate the loop
+- Continue ends the current iteration and program controls goes to the end of the loop body
