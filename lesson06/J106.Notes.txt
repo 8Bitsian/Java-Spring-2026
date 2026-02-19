@@ -1,0 +1,5 @@
+Imani Hollie 02/19/2026
+Class Chapter 6 Notes
+
+This chapter introduces methods, parameters, and arguments.
+
