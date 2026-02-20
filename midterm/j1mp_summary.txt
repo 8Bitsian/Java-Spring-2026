@@ -1,0 +1,63 @@
+Imani Hollie 02/20/2026
+Directions:
+- Summarize each question to gain a clear understanding of the underlying issue
+- Specify the input data type and provide sample inputs and outputs for comprehension and problem identification
+
+PART 1 - CALCULATING SALES
+==========================
+An online retailer sells 5 products whose retail prices are as follows:
+- Product 1: $2.98
+- Product 2: $4.50
+- Product 3: $9.98
+- Product 4: $4.49
+- Product 5: $6.87
+
+Write an application that reads a series of a pair of numbers as follows:
+- Product Number
+- Quantitiy Sold
+
+Your program should use a switch statement to determine the retail price for each product.
+It should calculate and display the total retail value of all products sold.
+Use a sentinel-controlled loop to determine when the program should stop looping and display the final results.
+
+PART 2 - ACCOUNT SAVING CHECKING
+==========================
+A bank in your towns updates its customers' accounts at the end of each month.
+The bank offers two types of accounts: Savings and Checking.
+Every customer must maintain a minimum balance or they will be penalized with a service charge as follows:
+- $10.00 for savings
+- $25.00 for checking
+
+If the balance at the end of the month is at least the minimum, the accout recieves iterest as follows:
+- 4% interest for savings
+- Checking accounts w/balanace of up to $5,000 more than the minumum recieve 3% interest; Otherwise, the interest is 5%
+
+Write a program that reads:
+- a customer’s account number (int type)
+- account type (char type; S for savings and C for checking)
+- minimum balance that the account should maintain
+- current balance
+
+The program should then output:
+- The account number
+- Account type
+- Current balance and new balance
+- Or an appropriate error message
+
+Test your program by running it five times, by using proper the following data:
+46728 S 1000 2700 
+87324 C 1500 7689 
+873 S 1000 800 
+89832 C 2000 3000 
+98322 C 1000 750
+
+PART 3 - PARKING CHARGES
+==========================
+A parking garage charges a $2.00 minimum fee to park for up to three hours.
+The garage charges an additional $0.50 per hour for each hour or part thereof in excess of three hours.
+The maximum charge for any given 24-hour period is $10.00.
+Assume that no car parks for longer than 24 hours at a time.
+
+Write an application that calculates and displays the parking charges for each customer who parked in the garage yesterday.
+You should enter the hours parked for each customer.
+The program should display the charge for the current customer and should calculate and display the running total of yesterday’s receipts.
