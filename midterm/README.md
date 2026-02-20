@@ -6,9 +6,8 @@
 
 📂 Files will be listed below:
 - `Midterm_Project.pdf` | Instructions
-- `J1MP_Summary.pdf`    | Summary and IPO
-- `J1MP_Document.pdf`   | Inital Documentation
-- `J1MP_Up_Doc.pdf`     | Updated Documentation
+- `J1MP_Summary.txt`    | Summary and IPO
+- `J1MP_Document.txt`   | Documentation
 - `J1MP_1.java`         | Part 1 of Midterm Project
 - `J1MP_2.java`         | Part 2 of Midterm Project
 - `J1MP_3.java`         | Part 3 of Midterm Project
