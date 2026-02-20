@@ -1,6 +1,6 @@
 // Imani Hollie 02/19/2026
 
-public class LoopDebug1 {
+public class Debug1_Loop {
   public static void main(String[] args) {
     /*
       // Initislizes i = 1, Checks i is greater or less than 10, Postfix decrement
