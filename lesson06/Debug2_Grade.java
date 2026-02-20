@@ -1,6 +1,6 @@
 // Imani Hollie 02/19/2026
 
-public class GradeDebug2 {
+public class Debug2_Grade {
   public static void main(String[] args) {
     /*
       int score = 75;
