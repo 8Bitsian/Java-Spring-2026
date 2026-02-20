@@ -1,4 +1,4 @@
-public class SwitchDebug3.java {
+public class Debug3_Switch.java {
   public static void main(String[] args) {
     /* 
       int grade = 2;
