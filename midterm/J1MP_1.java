@@ -20,7 +20,7 @@
 // Import utility library
 import java.util.Scanner; // Scanner class allows use of Scanner object
 
-public class Main {
+public class J1MP_1 {
   public static void main(String[] args) {
     // Create Scanner object "input"
     Scanner input = new Scanner(System.in);
