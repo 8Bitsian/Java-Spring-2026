@@ -1,0 +1,14 @@
+Imani Hollie 02/20/2026
+Directions:
+- Write documentation for each program
+
+PART 1 - CALCULATING SALES
+==========================
+
+
+PART 2 - ACCOUNT SAVING CHECKING
+==========================
+
+
+PART 3 - PARKING CHARGES
+==========================
