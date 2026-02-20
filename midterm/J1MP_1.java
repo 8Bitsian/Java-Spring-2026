@@ -1,5 +1,5 @@
 /* 
-   Imani Hollie 01/30/2026
+   Imani Hollie 02/20/2026
    Midterm Project: Part 1 - Calculating Sales
    An online retailer sells 5 products whose retail prices are as follows:
   - Product 1: $2.98
