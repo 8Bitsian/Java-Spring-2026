@@ -17,12 +17,12 @@ public class J104_1 {
       Random rand = new Random(); // Create a Random object
 
       // Get input for a number
-      System.out.print("Number? ");
+      System.out.print("Enter Number (1-5): ");
       int n = input.nextInt();
 
       // Validate input (n) is between 1 and 5
       while (n < 1 || n > 5) {
-         System.out.print("ERROR: Invalid Input")
+         System.out.print("ERROR: Invalid Input\n Enter Number (1-5): ")
          n = input.nextInt();
       }
 
@@ -47,4 +47,5 @@ public class J104_1 {
 
       input.close();
    }
+
 }
