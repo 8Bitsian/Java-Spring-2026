@@ -32,19 +32,110 @@
 */
 
 // Import utility library
-import java.util.Scanner; // Scanner class allows use of Scanner object
+import java.util.Scanner; // Scaner class allows use of Scanner object
 
 public class J1MP_2 {
-  public static void main(String[] args) {
-    // Create Scanner object "input"
-    Scanner input = new Scanner(System.in);
+   public static void main(String[] args) {
+      // Create objects
+      Scanner input = new Scanner(System.in);
 
-    // Declare variables
+      // Declare variables
+      int accountNumber;
+      char accountType = 'a';
+      double minimumBalance = 0.0;
+      double currentBalance = 0.0;
 
-    // Get user's input
-    
-    // Output
+      // While loop iterates until 
+      while (true) {
+         // Get user's input (Sentinel Value = -1)
+         System.out.println("======================================");
+         System.out.println("Enter Banking Information (-1 to EXIT)");
 
-    input.close();  // Close scanner
-  }
+         // Iterate getting the account number while user input is true
+         while (true) {
+            // Get account number
+            System.out.print("Enter Account Number: ");
+            accountNumber = input.nextInt();
+
+            // Validate IF account number is -1 THEN return to the main method
+            if (accountNumber == -1) {
+               input.close(); // Close Scanner object
+               System.out.println("Exiting...");
+               return; // Return to main method
+            }
+
+            // Validate IF account number is 1-5 digits THEN break while loop
+            if (accountNumber >= 1 && accountNumber <= 99999) {
+               break;
+            } // ELSE print ERROR message and iterate
+            System.out.println("ERROR: Invalid Input - Account number must be 1-5 digits.");
+         }
+         
+         // Iterate getting the account type while user input is true
+         while (true) {
+            // Get account type
+            System.out.print("Enter Account Type (S or C): ");
+            accountType = input.next().toUpperCase().charAt(0);
+            // next() reads the next string the user inputs
+            // toUpperCase() converts string to uppercase
+            // charAt() extracts the first character of the string
+
+            // Validate IF account number is 'S' OR 'C' THEN break while loop
+            if (accountType == 'S' || accountType == 'C') {
+               break;
+            } // ELSE print ERROR message and iterate
+            System.out.println("ERROR: Invalid Input - Account type must be 'S' or 'C'.");
+         }
+
+         // Get the minimum balance for the account
+         System.out.print("Enter Minimum Balance: $");
+         minimumBalance = input.nextDouble();
+
+         // Get the current balance of the account
+         System.out.print("Enter Current Balance: $");
+         currentBalance = input.nextDouble();
+
+         double newBalance = currentBalance;
+         double serviceCharge = 0.0;
+         double interest = 0.0;
+         
+         switch (accountType) {
+            case 'C': // Checking account
+               // IF currentbalance is LESS THAN mimimumBalance ($0), THEN serviceCharge = 25.0
+               if (currentBalance < minimumBalance) {
+                  serviceCharge = 25.0;
+                  newBalance -= serviceCharge;
+               // ELSE IF currentBalance is LESS THAN OR EQUAL TO $5,000, THEN interest is 3%
+               } else if (currentBalance <= 5000){
+                  interest = currentBalance * 0.03;
+                  newBalance += interest;
+               // ELSE currentBalance is GREATER THAN $5,000, THEN interest is 5%
+               } else {
+                  interest = currentBalance * 0.05;
+                  newBalance += interest;
+               }
+               break; // Break switch statement
+               
+            case 'S': // Savings account
+               // IF currentBalance is LESS THAN minimumBalance ($0), THEN serviceCharge = 10.0
+               if (currentBalance < minimumBalance) {
+                  serviceCharge = 10.0;
+                  newBalance -= serviceCharge;
+               // ELSE currentBalance is GREATER THAN minimumBalance ($0), THEN interest = 4%
+               } else {
+                  interest = currentBalance * 0.04;
+                  newBalance += interest;
+               }
+               break;
+         }
+
+         // Output account summary
+         System.out.println("\n--- ACCOUNT SUMMARY ---");
+         System.out.println("Account Number: " + accountNumber);
+         System.out.println("Account Type: " + accountType);
+         System.out.printf("Current Balance: $%.2f%n", currentBalance);
+         System.out.printf("New Balance: $%.2f%n", newBalance);
+         System.out.println();
+      }
+   }
 }
