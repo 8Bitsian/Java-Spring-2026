@@ -4,11 +4,42 @@ Directions:
 
 PART 1 - CALCULATING SALES
 ==========================
+1. Input:
+  - int quantitySold
+  - double retailPrice
 
+2. Processing:
+  - Decision statements:
+    
+3. Output:
+  - double subtotal
+  - double totalValue
 
 PART 2 - ACCOUNT SAVING CHECKING
 ==========================
+1. Input:
+  - int accountNumber
+  - char accountType (S for savings; C for checking)
+  - double minimumBalance
+  - double currentBalance
 
+2. Processing:
+  - Decision statements:
+    
+3. Output:
+  - int accountNumber
+  - char accountType (S for savings; C for checking)
+  - double currentBalance
+  - double newBalance
 
 PART 3 - PARKING CHARGES
 ==========================
+1. Input:
+  - int hoursParked
+
+2. Processing:
+  - Decision statements:
+    
+3. Output:
+  - double charge
+  - double runningTotal
