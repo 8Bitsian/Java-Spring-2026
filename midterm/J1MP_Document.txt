@@ -1,6 +1,5 @@
 Imani Hollie 02/20/2026
-Directions:
-- Write documentation for each program
+Directions: Write IPO documentation for each program
 
 PART 1 - CALCULATING SALES
 ==========================
@@ -9,7 +8,21 @@ PART 1 - CALCULATING SALES
   - double retailPrice
 
 2. Processing:
-  - Decision statements:
+  - FOR iterates integer productNumber 5 times
+    - Get user input for quantitySold
+    - Validate user input:
+      IF quantitySold == -1 THEN break loop early
+    - Calculate retail price:
+      SWITCH productNumber
+        productNumber 1: retailPrice = 2.98
+        productNumber 2: retailPrice = 4.50
+        productNumber 3: retailPrice = 9.98
+        productNumber 4: retailPrice = 4.49
+        productNumber 5: retailPrice = 6.87
+        Default: retailPrice = $0.00
+    - Calculate subtotal and running total
+      subtotal = retailPrice * quantitySold
+      totalValue += subtotal
     
 3. Output:
   - double subtotal
