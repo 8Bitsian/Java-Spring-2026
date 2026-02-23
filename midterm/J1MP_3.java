@@ -35,13 +35,13 @@ public class J1MP_3 {
       double runningReceipts = 0.0;
       int customerCount = 0;
 
+      // Get user's input (Sentinel Value = -1)
+      System.out.println("PARKING CHARGES CALCULATOR");
+      System.out.println("==========================");
+      System.out.println("Enter hours parked for each customer (-1 to EXIT).\n");
+      
       // Iterate WHILE program is TRUE
       while (true) {
-         // Get user's input (Sentinel Value = -1)
-         System.out.println("PARKING CHARGES CALCULATOR");
-         System.out.println("==========================");
-         System.out.println("Enter hours parked for each customer (-1 to EXIT).\n");
-
          // Iterate getting hours customer parks WHILE user input is TRUE (NOT -1)
          while (true) {
             // Get hours customer parked
@@ -59,17 +59,20 @@ public class J1MP_3 {
             if (hours >= 0.0 && hours <= MAX_HOURS) { // hours >= 0 AND hours <= 24
                break;
             } // ELSE print ERROR message and iterate
-            System.out.println("ERROR: Invalid Input - Hours must be value from 0 to 24.");
+            System.out.println("ERROR: Invalid Input - Hours must be value from 0 to 24 (inclusive).\n");
          }
 
          // Calculate current charge
          double currentCharge;
-         // Validate IF hours is <= to MIN_HOURS (3) THEN currentCharge is MIN_FEE ($2.00)
-         if (hours <= MIN_HOURS) {
+         // Validate IF hours is equal to 0 THEN currentCharge is $0.00
+         if (hours == 0) {
+            currentCharge = 0.0;
+         // Validate ELSE IF hours is <= to MIN_HOURS (3) THEN currentCharge is MIN_FEE ($2.00)
+         } else if (hours <= MIN_HOURS) {
             currentCharge = MIN_FEE;
          // ELSE calculate current charge w/extraHours multiplied by the ADD_RATE ($0.50)
          } else { // Byond 3 Hours: Each hour OR PART thereof counts as a full hour
-            double extraHours = Math.ceil(hours - Min_HOURS); // Round up with Math.ceil()
+            double extraHours = Math.ceil(hours - MIN_HOURS); // Round up with Math.ceil()
             currentCharge = MIN_FEE + (extraHours * ADD_RATE);
          }
          
