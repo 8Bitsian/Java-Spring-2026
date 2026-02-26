@@ -3,3 +3,16 @@ Class Chapter 6 Notes
 
 This chapter introduces methods, parameters, and arguments.
 
+A method definition consists of method name, parameters, return value type, and body.
+
+  modifier returnValuType methodName(parameterList) {
+    // Method body
+  }
+
+  public static int sum(itn number1, int number2) {
+    int result = 0;
+    for (int i = number1; i <= number2; i++)
+      result += i;
+    return result
+  }
+
