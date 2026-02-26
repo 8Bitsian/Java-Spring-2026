@@ -17,3 +17,9 @@ A method definition consists of method name, parameters, return value type, and 
     return result
   }
 
+Calling a method executes the code in the method.
+Calling is also called method invocation.
+It returns a value or executes a statement.
+
+  int larger = max(3, 4);
+  System.out.prinln("Welcome to Java!");
