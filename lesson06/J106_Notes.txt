@@ -7,6 +7,7 @@ A method definition consists of method name, parameters, return value type, and 
 
   modifier returnValuType methodName(parameterList) {
     // Method body
+    // Recommended to have no more than ~20 lines
   }
 
   public static int sum(itn number1, int number2) {
