@@ -1,5 +1,5 @@
 public class Increment {
-  // Create global variables outside of the methods
+  // Create global variables within the class and outside of the methods
   static int y = 9;
   
   public static void main(String[] args) {
@@ -14,7 +14,6 @@ public class Increment {
   }
 
   private static void increment(int n) {
-    // Static methods can only read static variables
     System.out.println("y = " + y);
 
     // Create local variables inside of the methods
