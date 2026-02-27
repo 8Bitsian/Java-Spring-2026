@@ -16,7 +16,6 @@ public class Increment {
   private static void increment(int n) {
     System.out.println("y = " + y);
 
-    // Create local variables inside of the methods
     n++;
     System.out.println("n inside the method is " + n);
   }
