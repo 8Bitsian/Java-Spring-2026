@@ -34,7 +34,7 @@ public class J1MP_3 {
       
       while (true) {
          // Call getHours() to get user input
-         int hours = getHours(input);
+         double hours = getHours(input);
 
          // Validate IF hours is -1 THEN break while loop
          if (hours == -1) {
@@ -55,14 +55,14 @@ public class J1MP_3 {
       input.close();
    }
 
-   public static int getHours(Scanner input) { // 2. Iterate getting hours customer parks WHILE user input is TRUE (NOT -1)
+   public static double getHours(Scanner input) { // 2. Iterate getting hours customer parks WHILE user input is TRUE (NOT -1)
       // Declare constants
       final int MAX_HOURS = 24; // No car parks more than 24 hours
       // Iterate getting user input while true
       while (true) {
          // Get hours customer parked
          System.out.print("Enter Hours Parked (0-24): ");
-         int hours = input.nextInt();
+         double hours = input.nextDouble();
 
          // Validate IF hours is -1 THEN return to main method
          if (hours == -1) { return -1; }
@@ -73,7 +73,7 @@ public class J1MP_3 {
       }
    }
 
-   public static double calculateCharge(int hours) { // 3. Calculate current charge
+   public static double calculateCharge(double hours) { // 3. Calculate current charge
       // Declare constants
       final double MIN_FEE = 2.0;      // $2.00 for up to 3 hours
       final double ADD_RATE = 0.5;     // $0.50 per hour or part thereof beyond 3 hours
@@ -94,8 +94,8 @@ public class J1MP_3 {
       return Math.min(charge, MAX_CHARGE);
    }
 
-   public static void displayResults(int customerCount, int hours, double charge, double total) { // 4. Output charge and running total
-      System.out.printf("Customer #%d | Hours: %d | Charge: $%.2f%n", customerCount, hours, charge);
+   public static void displayResults(int customerCount, double hours, double charge, double total) { // 4. Output charge and running total
+      System.out.printf("Customer #%d | Hours: %.2f | Charge: $%.2f%n", customerCount, hours, charge);
       System.out.printf("Running total for yesterday: $%.2f%n%n", total);
    }
 }
