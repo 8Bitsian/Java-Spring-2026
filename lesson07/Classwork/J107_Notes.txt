@@ -89,6 +89,7 @@ myList[3] = 3.5;                         // Index = [1.9][2.9][3.4][3.5]
 
 ===== TRACE PROGRAM W/ARRAY ===
 
+EX11.
 public class Test {
   public static void main(String[] args) {
     int[] values = new int[5];  // Declare array variable values
@@ -99,3 +100,37 @@ public class Test {
     // [11][ 1][ 3][ 6][10]
   }
 }
+
+===== INITALIZING ARRAYS W/INPUT VALUES ===
+
+EX12.
+java.util.Scanner input = new java.util.Scanner(System.in);
+System.out.print("Enter " + myList.length + " values: ");
+for (int i = 0; i < myList.length; i++)
+  myList[i] = input.nextDouble();
+
+===== RANDOM SHUFFLING ===
+for (int i = 0; i < myList.length - 1; i++) {
+  // Generate an index j randomly
+  int j = (int)(Math.random() * myList.length);
+  
+  // swap myList[i] with myList[j]
+  double temp = myList[i];
+  myList[i] = myList[j];
+  myList[j] = temp;
+}
+
+===== ENHANCED FOR LOOP (FOR-EACH LOOP) ===
+JDK 1.5 introduced a new for loop that enables you to traverse the complete array sequentially w/out using an index variable.
+
+Ex. the following code displays all elements in the array myList
+for (double value : muList)
+  system.out.println(value);
+
+EX. In general the syntax is:
+for (elementType value: arrayRefVar)
+  // Processing
+
+You still have to use an index variable if you wish to traverse the array in a different order or chnage the elements in the array.
+
+===== 
