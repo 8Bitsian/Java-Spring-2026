@@ -132,5 +132,3 @@ for (elementType value: arrayRefVar)
   // Processing
 
 You still have to use an index variable if you wish to traverse the array in a different order or chnage the elements in the array.
-
-===== 
