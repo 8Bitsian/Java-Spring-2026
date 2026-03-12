@@ -4,10 +4,16 @@ This chapter introduces single arrays.
 
 Opening problem: Read 100 numbers, compute their average, and find how many numbers are above the average.
 
-Arrya is a data strucutre that represents a collection of the same types of data.
+=== INTRODUCTING ARRAYS ===
+Array is a data strucutre that represents a collection of the same types of data.
 
-EX.
+EX1.
 double[] myList = new double[10];
 - Array reference variable = myList
 - Array element starts at index 0 (10 elements = 0-9)
 
+=== DECLARING ARRAY VARIABLES ===
+datatype[] arrayRefVar;
+
+EX2.
+double [] myList
