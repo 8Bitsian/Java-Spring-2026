@@ -1,4 +1,13 @@
 Imani Hollie 03/12/2026
 Class Chapter 7 Notes
-
 This chapter introduces single arrays.
+
+Opening problem: Read 100 numbers, compute their average, and find how many numbers are above the average.
+
+Arrya is a data strucutre that represents a collection of the same types of data.
+
+EX.
+double[] myList = new double[10];
+- Array reference variable = myList
+- Array element starts at index 0 (10 elements = 0-9)
+
