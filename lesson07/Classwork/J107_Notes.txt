@@ -8,7 +8,7 @@ Opening problem: Read 100 numbers, compute their average, and find how many numb
 Array is a data strucutre that represents a collection of the same types of data.
 
 EX1.
-double[] myList = new double[10];
+double[] myList = new double[9];
 - Array reference variable = myList
 - Array element starts at index 0 (10 elements = 0-9)
 
@@ -22,7 +22,7 @@ double[] myList;
 datatype[] arrayRefVar = new datatype[arraySize];
 
 EX3.
-double[] myList = new double[10];
+double[] myList = new double[9];
 
 These fixed-sized arrays cannot change the array size since they only point to a reference in memory and not an actual value.
 
@@ -40,14 +40,62 @@ When an array is created, its elements are assigned the default value of:
 - 'false' for boolean types ('true' is 1)
 
 EX5.
-int[] arraylist1 = new int[10]
-arraylist[i] = 0
+- int[] arraylist1 = new int[9]
+  arraylist[i] = 0
+- double[] arraylist2 = new double[9]
+  arraylist[i] = 0.0
+- char[] arraylist3 = new char[9]
+  arraylist[i] = 0 (\u0000)
+- boolean[] arraylist4 = new boolean[9]
+  arraylist[i] = false
 
-double[] arraylist2 = new double[10]
-arraylist[i] = 0.0
+Any non-primitive datatypes, like String, will be null until they are declared.
 
-char[] arraylist3 = new char[10]
-arraylist[i] = 0 (\u0000)
+EX6.
+String[] arraylist = new String[10];
+arraylist[i] = null
 
-boolean[] arraylist4 = new boolean[10]
-arraylist[i] = false
+===== INDEXED VARIBALES ===
+The array elements are accessed through the index. The array indices are 0-based, i.e., it starts from 0 to arrayRefVar.length - 1. Each element in the array is represented using the following syntax, known as the indexed variable.
+
+arrayRefVar[index]
+
+EX7.
+double[] myList = new double[9]; // indexed from 0 - 9
+myList.length = 10
+
+===== USING INDEXED VARIABLES ===
+After an array is created, an indexed variable can be used in the same way as a regular variable.
+
+EX8. The following code adds the value in myList[0], myList[1], and myList[2]:
+int[] myList = new int[3]          // Index = [ 0][ 0][ 0]
+myList[0] = 8;                     // Index = [ 8][ 0][ 0]
+myList[1] = 10;                    // Index = [ 8][10][ 0]
+myList[2] = myList[0] + myList[1]; // Index = [ 8][10][18] (8 + 10 = 18)
+
+===== ARRAY INITIALIZERS ===
+EX9. Declaring, creating, and initializing in one step:
+double[] myList = new double[4]          // Index = [0.0][0.0][0.0][0.0]
+double[] myList = {1.9, 2.9, 3.4, 3.5};  // Index = [1.9][2.9][3.4][3.5]
+
+The shorthand syntax must be in one statement.
+
+EX10. The shorthand is equivalent to this:
+double[] myList = new double[4]          // Index = [0.0][0.0][0.0][0.0]
+myList[0] = 1.9;                         // Index = [1.9][0.0][0.0][0.0]
+myList[1] = 2.9;                         // Index = [1.9][2.9][0.0][0.0]
+myList[2] = 3.4;                         // Index = [1.9][2.9][3.4][0.0]
+myList[3] = 3.5;                         // Index = [1.9][2.9][3.4][3.5]
+
+===== TRACE PROGRAM W/ARRAY ===
+
+public class Test {
+  public static void main(String[] args) {
+    int[] values = new int[5];  // Declare array variable values
+    for (int i = 1; i < 5; i++) {
+      values[i] = i + values[i - 1];  // After line is executed, value[1] is 1
+    } // [ 0][ 1][ 3][ 6][10]
+    values[0] = values[1] + values[4]; // 1 + 10 = 11
+    // [11][ 1][ 3][ 6][10]
+  }
+}
