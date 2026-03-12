@@ -4,7 +4,7 @@ This chapter introduces single arrays.
 
 Opening problem: Read 100 numbers, compute their average, and find how many numbers are above the average.
 
-=== INTRODUCTING ARRAYS ===
+===== INTRODUCTING ARRAYS ===
 Array is a data strucutre that represents a collection of the same types of data.
 
 EX1.
@@ -12,8 +12,42 @@ double[] myList = new double[10];
 - Array reference variable = myList
 - Array element starts at index 0 (10 elements = 0-9)
 
-=== DECLARING ARRAY VARIABLES ===
+===== DECLARING ARRAY VARIABLES ===
 datatype[] arrayRefVar;
 
 EX2.
-double [] myList
+double[] myList;
+
+===== CREATING ARRAYS ===
+datatype[] arrayRefVar = new datatype[arraySize];
+
+EX3.
+double[] myList = new double[10];
+
+These fixed-sized arrays cannot change the array size since they only point to a reference in memory and not an actual value.
+
+===== THE LENGTH OF THE ARRAY ===
+Once an array is created, its size is fixed. It cannot be changed. You can find the size using arrayRefVar.length
+
+EX4.
+myList.length
+10
+
+===== DEFUALT VALUES ===
+When an array is created, its elements are assigned the default value of:
+- 0 for the numeric primitive data types (int, double)
+- '\u0000' for char types (is an byte-sized integer)
+- 'false' for boolean types ('true' is 1)
+
+EX5.
+int[] arraylist1 = new int[10]
+arraylist[i] = 0
+
+double[] arraylist2 = new double[10]
+arraylist[i] = 0.0
+
+char[] arraylist3 = new char[10]
+arraylist[i] = 0 (\u0000)
+
+boolean[] arraylist4 = new boolean[10]
+arraylist[i] = false
