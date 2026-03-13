@@ -123,12 +123,33 @@ for (int i = 0; i < myList.length - 1; i++) {
 ===== ENHANCED FOR LOOP (FOR-EACH LOOP) ===
 JDK 1.5 introduced a new for loop that enables you to traverse the complete array sequentially w/out using an index variable.
 
-Ex. the following code displays all elements in the array myList
+EX13. the following code displays all elements in the array myList
 for (double value : muList)
   system.out.println(value);
 
-EX. In general the syntax is:
+EX14. In general the syntax is:
 for (elementType value: arrayRefVar)
   // Processing
 
 You still have to use an index variable if you wish to traverse the array in a different order or chnage the elements in the array.
+
+===== COPYING ARRAYS ===
+Often, in a program, you need to duplicate an arry or part of an array.
+In such cases you could attempt to use an assignment statement as follows: list1 = list2
+
+EX15.
+Before the assignment:
+- list1 -> list1 [6][3][7][2]
+- list2 -> list2 [8][7][9][4]
+After the assignment:
+- list1 -> list1 [6][3][7][2]
+- list2 -> list1 [6][3][7][2] (list2 will be lost)
+
+Arrays are reference objects.
+
+EX16. Using a loop
+int[] sourceArray = {2, 3, 4, 5, 6};
+int[] targetArray = new int[sourceArray.length];
+for (int i = 0; i < sourceArrays.length; i++)
+  targetArray[i] = soruceArray[i];
+
