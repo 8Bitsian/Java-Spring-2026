@@ -153,3 +153,8 @@ int[] targetArray = new int[sourceArray.length];
 for (int i = 0; i < sourceArrays.length; i++)
   targetArray[i] = soruceArray[i];
 
+===== THE ARRAYCOPY UTILITY ===
+arraycopy(soruceArray, src.pos, targetArray, tar_pos, length);
+
+EX17.
+System.arraycopy(sourceArray, 0, targetArray, 0, sourceArray.length);
