@@ -26,10 +26,6 @@
    OK done!
 */
 
-/* Imani Hollie 03/13/2026
-   Lesson 7 Assignment: Utilize an array to produce an output similar to the sample output below.
-*/
-
 import java.util.Scanner;
 
 public class J107_2 {
