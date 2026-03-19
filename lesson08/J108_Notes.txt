@@ -1,0 +1,5 @@
+Imani Hollie 03/19/2026
+Class Chapter 9 Notes
+This chapter introduces double arrays.
+
+===== INTRODUCING ARRAYS ===
