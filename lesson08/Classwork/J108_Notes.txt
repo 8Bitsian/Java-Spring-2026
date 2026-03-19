@@ -1,5 +1,15 @@
 Imani Hollie 03/19/2026
-Class Chapter 9 Notes
-This chapter introduces double arrays.
+Class Chapter 8 Notes
+This chapter introduces multidimensional (2D) arrays.
 
-===== INTRODUCING ARRAYS ===
+===== REVIEW OBJECTIVES ===
+- Variable Length Argument List
+    A variable number of arguments of the same type can be passed to a method and treated as an array
+    - Only one variable-length parameter specified
+    - Must be the last parameter
+    - Return type cannot be of variable length
+    EX1. public static void methodName (dataType... argumentName) { ... }
+
+- Selection Sort
+- java.util.Arrays Class
+- Passing Arguments to the Main Method from the Command Line
