@@ -9,7 +9,23 @@ This chapter introduces multidimensional (2D) arrays.
     - Must be the last parameter
     - Return type cannot be of variable length
     EX1. public static void methodName (dataType... argumentName) { ... }
+    REF1. VarArgsDemo.java
 
 - Selection Sort
+    Intuitive sorting algorithm
+    REF2. SelectionSort.java
+
 - java.util.Arrays Class
+    The java.util.Arrays class contains useful methods for common array operations:
+    - Searching/sorting arrays
+    - Comparing arrays
+    - Filling array elements
+    - Returning a string representation of the array
+    REF3. ArraysDemo.java
+
 - Passing Arguments to the Main Method from the Command Line
+    REF4. CommandLineDemo.java
+
+===== INTRODUCTION ==========
+Data in a table or a matrix can be represented using a 2D array.
+A 2D array is an array that contains other arrays as its elements.
