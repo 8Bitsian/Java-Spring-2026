@@ -34,7 +34,7 @@ A 2D array is an array that contains other arrays as its elements.
 Creating 2D Arrays
 EX2. elementType[ROWS][COLS] arrayReferenceName;
      int [5][3] matrix; // Creates a 5 X 3 table filled w/integers
-     Matrix[2][1] = 7;  // Stores value 7 in index of row 2 and col 1
+     matrix[2][1] = 7;  // Stores integer value 7 in index of row 2 and col 1 of matrix array
 
 Initializing 2D Arrays
 EX3. int[][] array = {
