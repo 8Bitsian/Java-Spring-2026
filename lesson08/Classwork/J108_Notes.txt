@@ -85,5 +85,15 @@ Processing 2D Arrays
             }
             System.out.println();
          }
+REF5. TwoDArrayDemo.java
 
 ===== MULTIDIMENSIONAL ARRAYS =====
+A 2D array is an array of 1D arrays, and a three-dimensional (3D) array is an array of 2D arrays.
+EX11. elementType[BLOCK][ROWS][COLS] arrayReferenceName;
+      int[][][] scores = new int [6][5][2]; // The scores array has 6 5X2 arrays
+      // In other words, there are 6 exams with 5 pages and 2 questions each.
+      scores.length         // 6 blocks
+      scores[0].length      // 5 rows in each block
+      scores[0][0].length   // 2 columns in each row
+
+REF6. ThreeDArrayDemo.java
