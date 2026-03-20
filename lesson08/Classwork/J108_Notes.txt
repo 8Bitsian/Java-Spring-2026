@@ -2,7 +2,7 @@ Imani Hollie 03/19/2026
 Class Chapter 8 Notes
 This chapter introduces multidimensional (2D) arrays.
 
-===== REVIEW OBJECTIVES ===
+===== REVIEW OBJECTIVES =====
 - Variable Length Argument List
     A variable number of arguments of the same type can be passed to a method and treated as an array
     - Only one variable-length parameter specified
@@ -49,3 +49,41 @@ EX4. int[][] array = new int[4][3];
      array[1][0] = 4; array[1][1] = 5; array[1][2] = 6;
      array[2][0] = 7; array[2][1] = 8; array[2][2] = 9;
      array[3][0] = 10; array[3][1] = 11; array[3][2] = 12;
+
+Length of 2D Arrays
+array.length measures the number of single arrays (rows) within an array
+EX5. int[][] x = new int[3][4]; // Declares 2D array w/3 rows and 4 cols
+     x.length = 3;              // Gives the number of rows (single arrays w/in 2D array)
+     x[0].length = 4;           // Gives the number of columns (elements w/in a specific array)
+     x[1].length = 4;
+     x[2].length = 4;
+
+Ragged Array
+Also to put fixed variable array inside of an array.
+EX6. int[][] triangleArray = {
+        {1, 2, 3},
+        {2, 3},
+        {3}
+     };
+
+EX7. int[][] triangleArray = new int[5][];
+     triangleArray[0] = new int[3];
+     triangleArray[1] = new int[2];
+     triangleArray[2] = new int[1];
+
+Processing 2D Arrays
+1. Declare the 2D Array
+   EX8. int[][] matrix = new int[10][10];
+2. Initialize the Array Values
+   EX9. for (int row = 0; row < matrix.length; row++)
+            for (int column = 0; column < matrix[row].length; column++)
+                matrix[row][column] = (int)(Math.random() * 100);
+3. Print the Values
+   EX10. for (int row = 0; row < matrix.length; row++) {
+            for (int column = 0; column < matrix[row].length; column++) {
+                System.out.print(matrix[row][column] + " ");
+            }
+            System.out.println();
+         }
+
+===== MULTIDIMENSIONAL ARRAYS =====
