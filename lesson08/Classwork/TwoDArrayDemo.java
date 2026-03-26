@@ -16,7 +16,7 @@ public class TwoDArrayDemo {
     public static void initArray(int[][] m) {
         for (int row = 0; row < m.length; row++)
             for (int col = 0; col < m[row].length; col++)
-                m[row][col] = (int)(Math.random() * 10);
+                m[row][col] = (int)(Math.random() * 100);
     }
 
     // Print the matrix
