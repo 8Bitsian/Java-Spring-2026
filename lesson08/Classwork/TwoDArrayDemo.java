@@ -12,7 +12,7 @@ public class TwoDArrayDemo {
         shuffleMatrix();
     }
 
-    // Fill the matrix with random numbers 0–9
+    // Fill the matrix with random numbers 0–99
     public static void initArray(int[][] m) {
         for (int row = 0; row < m.length; row++)
             for (int col = 0; col < m[row].length; col++)
