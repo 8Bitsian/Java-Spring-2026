@@ -12,30 +12,49 @@
 
 import java.util.Scanner;
 
-public class J109_1 {  // J109_1 class
-  public static void main(String[] args) {  // Program execution starts here
-    // Declare objects
-    Scanner input = new Scanner(System.in); // Declare a Scanner object "input'
-    Person p = new Person();                // Declare a Person object "p"
+public class J109_1 {
+   public static void main(String[] args) {
+      // Declare objects
+      Scanner input = new Scanner(System.in);
+      Person p = new Person();
 
-    // Get user input
-    String name = p.getName(input);         // Declare String "name" and call Person object getName() method
-    String phone = p.getPhone(input);       // Declare String "name" and call Person object getPhone() method
+      // Get user input
+      String name = p.getName(input);
+      String phone = p.getPhone(input);
 
-    // Output
-    System.out.println("Your name: " + name);
-    System.out.println("Last 4-digit phone number: " + phone);
-  }
+      // Output
+      System.out.println("Your name: " + name);
+      System.out.println("Last 4-digit phone number: " + phone);
+   }
 }
 
-public class Person {  // Person class
-  public String getName(Scanner input) {
-    System.out.print("Name? ");
-    return input.nextLine();
-  }
+public class Person {
+   public String getName(Scanner input) {
+      String name;
+      while (true) {
+         System.out.print("Name? ");
+         name = input.nextLine().trim();
 
-  public String getPhone(Scanner input) {
-    System.out.print("Last 4-digit phone number? ");
-    return input.nextLine();
-  }
+         if (!name.isEmpty()) {
+            return name;
+         } else {
+            System.out.println("ERROR: Invalid Input - Name cannot be blank.");
+         }
+      }
+   }
+
+   public String getPhone(Scanner input) {
+      String phone;
+      while (true) {
+         System.out.print("Last 4-digit phone number? ");
+         phone = input.nextLine().trim();
+
+         if (phone.matches("\\d{4}")) {
+            return phone;
+         } else {
+            System.out.println("ERROR: Invalid Input - Phone must be exactly 4 digits (0-9).");
+         }
+      }
+   }
 }
+
