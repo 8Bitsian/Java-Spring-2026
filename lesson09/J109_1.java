@@ -1,4 +1,5 @@
-/* Imani Hollie 03/26/2026
+/* 
+   Imani Hollie 03/26/2026
    5-Minute Challenge: Write a program that takes user input for a name and the last 4 digits
    of a phone number from the keyboard, then prints them to the console.
    Create a class "Person" inside your text code.
