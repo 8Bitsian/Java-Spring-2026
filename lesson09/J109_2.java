@@ -1,4 +1,5 @@
-/* Imani Hollie 03/26/2026
+/* 
+   Imani Hollie 03/26/2026
    Lab 9 Assignment: Add comments to interpret the Boolean expressions
    in the selected if-statements (//), translating them into your own words.
 */
