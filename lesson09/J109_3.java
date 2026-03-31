@@ -12,8 +12,7 @@ public class J109_3 {
         CircleWithPrivateDataFields circle2 = new CircleWithPrivateDataFields(10);
         CircleWithPrivateDataFields circle3 = new CircleWithPrivateDataFields(100);
 
-        System.out.println("Number of Circle objects created: " +
-                CircleWithPrivateDataFields.getNumberOfObjects());
+        System.out.println("Number of Circle objects created: " + CircleWithPrivateDataFields.getNumberOfObjects());
 
         printCircleInfo("Circle 1", circle1, 2);
         printCircleInfo("Circle 2", circle2, 20);
