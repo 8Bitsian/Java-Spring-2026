@@ -36,7 +36,7 @@ public class Person {
          System.out.print("Name? ");
          name = input.nextLine().trim();
 
-         if (!name.isEmpty()) {
+         if (name.matches("[a-zA-Z- ]+")) {
             return name;
          } else {
             System.out.println("ERROR: Invalid Input - Name cannot be blank.");
