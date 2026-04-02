@@ -21,7 +21,6 @@ public class TestCircle {
         System.out.println("Area of Circle 3: " + circle3.getArea());
     }
 
-    /*
     public static void testStaticCircles() {
         StaticCircle sc1 = new StaticCircle();
         System.out.println("Number of instances: " + sc1.getNumberOfObjects());
@@ -29,6 +28,7 @@ public class TestCircle {
         System.out.println("Number of instances: " + sc2.getNumberOfObjects());
     }
 
+    /*
     public static void testConstructorCircle() {
         ConstructorCircle cc1 = new ConstructorCircle();
         System.out.println("Number of instances: " + cc1.getNumberOfObjects());
