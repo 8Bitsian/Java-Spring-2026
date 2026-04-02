@@ -7,6 +7,8 @@
     - Add proper comments to the code. Use "//*" to indicate your modifications
 */
 
+import java.util.Scanner;
+
 public class J110_2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
