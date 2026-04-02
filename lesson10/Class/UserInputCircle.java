@@ -44,19 +44,3 @@ public class UserInputCircle {
         return Double.parseDouble(text);
     }
 }
-
-class Circle {
-    private final double radius;
-
-    public Circle(double r) {
-        radius = r;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public double getArea() {
-        return Math.PI * radius * radius;
-    }
-}
