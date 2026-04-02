@@ -13,10 +13,13 @@ public class TestCircle {
 
         // Display the area of each circle
         System.out.println("Area of Circle 1: " + circle1.getArea());
+        
+        // Change the radius of the second anf third circles and display new ouputs
         System.out.println("Area of Circle 2: " + circle2.getArea());
-        System.out.println("Area of Circle 3: " + circle3.getArea());
+        circle2 = circle1;
+        System.out.println("Area of Circle 2: " + circle2.getArea());
 
-        // Change the radius of the third circle and display new output
+        System.out.println("Area of Circle 3: " + circle3.getArea());
         circle3.radius = 100;
         System.out.println("Area of Circle 3: " + circle3.getArea());
     }
