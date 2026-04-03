@@ -5,42 +5,41 @@
     Write a code that performs the following steps:
     - Create an "Euler" class to calculate the value of e for i = 1, 2, 5, 10, 50, 100, 200
     - Refer to https://www.mathisfun.com/numbers/e-eulers-number.html for more information
-    - The input should be the maximum of "i" used in the summation
+    - The input should be the maximum of i used in the summation
 */
 
-import java.util.Scanner;
-
 public class J110_3 {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Enter the Maximum: ");
-        int max = input.nextInt();
-        System.out.println();
-
-        Euler eCalc = new Euler();
-
+    static void main() {
         int[] values = {1, 2, 5, 10, 50, 100, 200};
 
         for (int i : values) {
-            if (i <= max) {
-                double estimate = eCalc.computeE(i);
-                System.out.printf("Approximation of e for i = %d: %.12f%n", i, estimate);
-            }
+            Euler eCalc = new Euler(i);
+            double estimate = eCalc.calculateE();
+            System.out.println("i = " + i + " → e ≈ " + estimate);
         }
     }
 }
 
 class Euler {
-    public double computeE(int max) {
-        double sum = 1.0;
-        double factorial = 1.0;
+    private int max;
 
-        for (int i = 1; i <= max; i++) {
-            factorial *= i;
-            sum += 1.0 / factorial;
-        }
+    public Euler(int max) { this.max = max; }
+
+    public double calculateE() {
+        double sum = 0;
+
+        for (int i = 1; i <= max; i++)
+            sum += 1.0 / factorial(i);
 
         return sum;
+    }
+
+    private long factorial(int n) {
+        long fact = 1;
+
+        for (int i = 1; i <= n; i++)
+            fact *= i;
+
+        return fact;
     }
 }
