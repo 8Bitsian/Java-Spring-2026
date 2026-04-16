@@ -7,7 +7,7 @@ public class StringDemo {
         System.out.println(m1.equals(m3));
         System.out.println(m1.charAt(0));
         System.out.println(m1.substring(5));
-        System.out.println(m1.substring(5, m1.length()));
+        System.out.println(m1.substring(5, m3.length()));
         System.out.println(m1.toLowerCase());
     }
 }
