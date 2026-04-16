@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class LoanCalculatorWithMethod {
   public staic void main(String[] args) {
+    LoanCalculatorWithMethod lc = 
     Scanner input = new Scanner(System.in);
 
     System.out.print("Enter annual interest rate, e.g, 7.25% : ");
@@ -14,7 +15,11 @@ public class LoanCalculatorWithMethod {
 
     System.out.print("Enter loan amount, e.g, 12000.52 : ");
     double loanAmount = input.nextDouble();
+    
+    calculateLoan(annualRate, numberOfYears, loanAmount);
+  }
 
-    calculateLoan(
+  private void calculateLoan(double annualRate, int numberOfYears, double loanAmount) {
+    
   }
 }
