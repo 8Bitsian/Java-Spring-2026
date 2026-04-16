@@ -17,9 +17,9 @@ public class LoanCalculator {
 
     double monthlyPayment = loanAmount * monthlyRate / (1 - 1 / Math.pow(1 + monthlyRate, numberOfYears * 12));
 
-    double totalPaymentt = monthlyPayment * numberOfYears * 12;
+    double totalPayment = monthlyPayment * numberOfYears * 12;
 
-    System.out.print("Enter loan amount, e.g, 12000.52 : ");
-    double loanAmount = input.nextDouble();
+    System.out.print("The monthly payment is : " + monthlyPayment);
+    System.out.print("The total payment is : " + totalPayment);
   }
 }
