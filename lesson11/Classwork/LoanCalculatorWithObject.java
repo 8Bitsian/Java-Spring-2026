@@ -15,6 +15,35 @@ public class Loan {
     this.numberOfYears = numberOfYears;
     this.loanAmount = loanAmount;
   }
+
+  // Getters and Setters
+  public double getAnnualRate() {
+    return 
+  }
+  
+  public int getNumberOfYears() {
+    
+  }
+  
+  public double getLoanAmount() {
+    return loanAmount;
+  }
+
+  public void setLoanAmount(doube loanAmount) {
+    this.loanAmount = loanAmount;
+  }
+
+  public double getLoanDate() {
+    return loanDate;
+  }
+
+  public double getMonthlyPayment() {
+    return 0;
+  }
+
+  public double getTotalPayment() {
+    return 0;
+  }
 }
 
 public class LoanCalculatorWithObject {
