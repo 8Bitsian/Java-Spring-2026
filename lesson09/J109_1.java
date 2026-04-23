@@ -39,7 +39,7 @@ class Person {
             if (name.matches("[a-zA-Z- ]+")) {
                 return name;
             } else {
-                System.out.println("ERROR: Invalid Input - Name must be characters only (a-z or A-Z)...");
+                System.out.println("ERROR: Invalid Input - Name must be characters only (a-z or A-Z)...\n");
             }
         }
     }
@@ -47,7 +47,7 @@ class Person {
     public String getPhone(Scanner input) {
         String phone;
         while (true) {
-            System.out.print("Please enter your 4-digit number: ");
+            System.out.print("\nPlease enter your 4-digit number: ");
             phone = input.nextLine().trim();
 
             if (phone.matches("\\d{4}")) {
